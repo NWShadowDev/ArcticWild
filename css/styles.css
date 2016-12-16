@@ -102,10 +102,14 @@ header {
   display: flex;
   width: 100%;
   height: auto;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center; }
   #gallery .row {
     width: 25%; }
     #gallery .row .col {
+      padding: 5px;
       flex: 1 1;
       border: 2px solid white;
       height: 200px;

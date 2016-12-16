@@ -133,9 +133,14 @@ header {
   width: 100%;
   height: auto;
   flex-wrap: wrap;
+  color: white;
+  font-family: 'Fjalla One',
+  sans-serif;
+  text-align: center;
   .row {
     width: 25%;
     .col {
+      padding: 5px;
       flex: 1 1;
       border:2px solid white;
       height: 200px;
