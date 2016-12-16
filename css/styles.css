@@ -12,6 +12,8 @@ header {
   header a {
     color: white;
     text-decoration: none; }
+    header a:hover {
+      color: #DC7725; }
 
 .flex-container {
   width: 970px;
@@ -30,6 +32,9 @@ header {
       .flex-container ul li a {
         color: white;
         font-family: 'Fjalla One', sans-serif; }
+        .flex-container ul li a:hover {
+          color: #DC7725;
+          text-decoration: underline; }
 
 #hero {
   align-items: center;

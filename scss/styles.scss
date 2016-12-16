@@ -1,3 +1,6 @@
+//Color Variables
+$arctic-orange : #DC7725;
+
 //Base Styles
 * {
   box-sizing: border-box;
@@ -15,6 +18,9 @@ header {
   a {
     color:white;
     text-decoration: none;
+    &:hover {
+      color:$arctic-orange;
+    }
   }
 }
 
@@ -37,6 +43,10 @@ header {
       a {
         color: white;
         font-family: 'Fjalla One', sans-serif;
+        &:hover {
+          color:$arctic-orange;
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -51,7 +61,7 @@ header {
     margin: 0 auto;
     display: block;
     &:hover {
-      color: #DC7725;
+      color: $arctic-orange;
     }
   }
   hr {
@@ -74,7 +84,7 @@ header {
     width: 200px;
     height: 70px;
     color: white;
-    background-color: #DC7725;
+    background-color: $arctic-orange;
     margin: 0 auto;
     display: block;
     margin-top:10%;
@@ -82,7 +92,7 @@ header {
     font-size: 14pt;
     font-weight: lighter;
     &:hover {
-      background-color: lighten(#DC7725, 10%);
+      background-color: lighten($arctic-orange, 10%);
     }
   }
   img {
@@ -146,7 +156,7 @@ header {
       height: 200px;
       margin: 10px;
       &:hover {
-        border: 3px solid #DC7725;
+        border: 3px solid $arctic-orange;
         width: 300px;
         height: 300px;
         -webkit-transform: rotate(180deg); /* Safari */
