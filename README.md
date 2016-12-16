@@ -1,5 +1,7 @@
 # _Arctic Wild Site Replica_
 
+![banner](https://github.com/NWShadowDev/CSSWeek4/blob/master/img/Banner.png)
+
 #### _CSS Week 4 Independent Project - Beyond the Basics_
 
 #### By _**Amber Farrington**_
