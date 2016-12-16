@@ -1,6 +1,6 @@
 # _Arctic Wild Site Replica_
 
-![banner](https://github.com/NWShadowDev/CSSWeek4/blob/master/img/Banner.png)
+![banner](https://github.com/NWShadowDev/ArcticWild/blob/master/img/Banner.png)
 
 #### _CSS Week 4 Independent Project - Beyond the Basics_
 
