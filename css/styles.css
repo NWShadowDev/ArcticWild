@@ -173,10 +173,6 @@ header {
         background-size: cover;
         background-position: center; }
 
-@media screen and (max-width: 768px) {
-  .flex-container #header-title {
-    position: relative;
-    top: 20px; } }
 @media screen and (max-width: 658px) {
   .flex-container ul li a {
     font-size: 10pt; }
@@ -190,6 +186,10 @@ header {
     font-size: 3em; }
   #hero a i {
     margin-top: 10px; } }
+@media screen and (max-width: 768px) {
+  .flex-container #header-title {
+    position: relative;
+    top: 20px; } }
 @media screen and (max-width: 1024px) {
   .flex-container {
     width: 80%; }
