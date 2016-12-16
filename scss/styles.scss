@@ -147,6 +147,10 @@ header {
       margin: 10px;
       &:hover {
         border: 3px solid #DC7725;
+        width: 300px;
+        height: 300px;
+        -webkit-transform: rotate(180deg); /* Safari */
+        transform: rotate(180deg);
       }
       &:nth-child(1) {
         background-image: url('../img/arctic-rafting.jpg');

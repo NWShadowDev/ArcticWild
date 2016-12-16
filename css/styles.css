@@ -115,7 +115,12 @@ header {
       height: 200px;
       margin: 10px; }
       #gallery .row .col:hover {
-        border: 3px solid #DC7725; }
+        border: 3px solid #DC7725;
+        width: 300px;
+        height: 300px;
+        -webkit-transform: rotate(180deg);
+        /* Safari */
+        transform: rotate(180deg); }
       #gallery .row .col:nth-child(1) {
         background-image: url("../img/arctic-rafting.jpg");
         flex-basis: 500px; }
