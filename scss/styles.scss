@@ -164,14 +164,19 @@ header {
   sans-serif;
   text-align: center;
   .row {
-    width: 25%;
+    width: 30%;
+    @extend .center;
     .col {
       padding: 5px;
+      margin-top: 10px;
       flex: 1 1;
       border:2px solid $white;
       height: 200px;
-      margin: 10px;
       transition: transform(5s);
+      background-repeat: no-repeat;
+      img {
+        background-size: cover;
+      }
       &:hover {
         border: 3px solid $arctic-orange;
         transform: rotateY(180deg);
@@ -179,55 +184,103 @@ header {
       }
       &:nth-child(1) {
         background-image: url('../img/arctic-rafting.jpg');
-        flex-basis: 500px;
+        flex-basis: 300px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(2) {
         background-image: url('../img/wildlife.png');
         background-position: center;
         flex-basis: 200px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(3) {
         background-image: url('../img/wild1.jpeg');
         background-position: center;
         background-size: contain;
         flex-basis: 300px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(4) {
         background: green;
         flex-basis: 300px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(5) {
         background: purple;
         flex-basis: 200px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(6) {
         background: purple;
         flex-basis: 200px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(7) {
         background: green;
         flex-basis: 200px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(8) {
         background: purple;
         flex-basis: 200px;
+        background-size: cover;
+        background-position: center;
       }
       &:nth-child(9) {
         background: purple;
         flex-basis: 200px;
-      }
-      &:nth-child(10) {
-        background: green;
-        flex-basis: 200px;
-      }
-      &:nth-child(11) {
-        background: purple;
-        flex-basis: 200px;
-      }
-      &:nth-child(12) {
-        background: purple;
-        flex-basis: 500px;
+        background-size: cover;
+        background-position: center;
       }
     }
   }
 }
+
+//Media Queries
+
+//768px and lower
+@media screen and (max-width:768px) {
+  .flex-container {
+    #header-title {
+      position: relative;
+      top: 20px;
+    }
+    .flex-container2 {
+      ul {
+        li {
+          a {
+            color: red;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+//1024px and higher
+@media screen and (max-width:1024px) {
+  .flex-container {
+    width: 80%;
+  }
+  #gallery {
+    .row {
+      .col {
+        width: 100%;
+        position: relative;
+        top: 100px;
+        }
+      }
+    }
+    .flex-container2 {
+      position: relative;
+      top: 100px;
+    }
+  }

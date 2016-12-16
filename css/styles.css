@@ -4,7 +4,7 @@
   list-style-type: none;
   font-family: 'Fjalla One', sans-serif; }
 
-.center, #hero a, #hero button, #hero img {
+.center, #hero a, #hero button, #hero img, #gallery .row {
   display: block;
   margin: 0 auto;
   text-align: center; }
@@ -109,56 +109,87 @@ header {
   font-family: 'Fjalla One', sans-serif;
   text-align: center; }
   #gallery .row {
-    width: 25%; }
+    width: 30%; }
     #gallery .row .col {
       padding: 5px;
+      margin-top: 10px;
       flex: 1 1;
       border: 2px solid #fff;
       height: 200px;
-      margin: 10px;
-      transition: transform(5s); }
+      transition: transform(5s);
+      background-repeat: no-repeat; }
+      #gallery .row .col img {
+        background-size: cover; }
       #gallery .row .col:hover {
         border: 3px solid #DC7725;
         transform: rotateY(180deg);
         opacity: 0.5; }
       #gallery .row .col:nth-child(1) {
         background-image: url("../img/arctic-rafting.jpg");
-        flex-basis: 500px; }
+        flex-basis: 300px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(2) {
         background-image: url("../img/wildlife.png");
         background-position: center;
-        flex-basis: 200px; }
+        flex-basis: 200px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(3) {
         background-image: url("../img/wild1.jpeg");
         background-position: center;
         background-size: contain;
-        flex-basis: 300px; }
+        flex-basis: 300px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(4) {
         background: green;
-        flex-basis: 300px; }
+        flex-basis: 300px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(5) {
         background: purple;
-        flex-basis: 200px; }
+        flex-basis: 200px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(6) {
         background: purple;
-        flex-basis: 200px; }
+        flex-basis: 200px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(7) {
         background: green;
-        flex-basis: 200px; }
+        flex-basis: 200px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(8) {
         background: purple;
-        flex-basis: 200px; }
+        flex-basis: 200px;
+        background-size: cover;
+        background-position: center; }
       #gallery .row .col:nth-child(9) {
         background: purple;
-        flex-basis: 200px; }
-      #gallery .row .col:nth-child(10) {
-        background: green;
-        flex-basis: 200px; }
-      #gallery .row .col:nth-child(11) {
-        background: purple;
-        flex-basis: 200px; }
-      #gallery .row .col:nth-child(12) {
-        background: purple;
-        flex-basis: 500px; }
+        flex-basis: 200px;
+        background-size: cover;
+        background-position: center; }
+
+@media screen and (max-width: 768px) {
+  .flex-container #header-title {
+    position: relative;
+    top: 20px; }
+  .flex-container .flex-container2 ul li a {
+    color: red; } }
+@media screen and (max-width: 1024px) {
+  .flex-container {
+    width: 80%; }
+
+  #gallery .row .col {
+    width: 100%;
+    position: relative;
+    top: 100px; }
+
+  .flex-container2 {
+    position: relative;
+    top: 100px; } }
 
 /*# sourceMappingURL=styles.css.map */
