@@ -38,10 +38,19 @@ header {
 }
 
 #hero {
+  align-items: center;
+  margin-top: 20%;
   hr {
     width: 200px;
-    height: 2px;
-    color: white;
+    height: 5px;
+    background: white;
+  }
+  h1 {
+    font-size: 7em;
+    margin: 0 auto;
+  }
+  h3 {
+    font-family: 'Fjalla One', sans-serif;
   }
   h1,h3 {
     color: white;

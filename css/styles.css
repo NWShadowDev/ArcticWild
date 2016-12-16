@@ -29,12 +29,20 @@ header {
         color: white;
         font-family: 'Fjalla One', sans-serif; }
 
-#hero hr {
-  width: 200px;
-  height: 2px;
-  color: white; }
-#hero h1, #hero h3 {
-  color: white;
-  text-align: center; }
+#hero {
+  align-items: center;
+  margin-top: 20%; }
+  #hero hr {
+    width: 200px;
+    height: 5px;
+    background: white; }
+  #hero h1 {
+    font-size: 7em;
+    margin: 0 auto; }
+  #hero h3 {
+    font-family: 'Fjalla One', sans-serif; }
+  #hero h1, #hero h3 {
+    color: white;
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
