@@ -40,6 +40,15 @@ header {
 #hero {
   align-items: center;
   margin-top: 10%;
+  a {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    &:hover {
+      color: #DC7725;
+    }
+  }
   hr {
     width: 200px;
     height: 5px;
@@ -67,6 +76,9 @@ header {
     font-family: 'Fjalla One', sans-serif;
     font-size: 14pt;
     font-weight: lighter;
+    &:hover {
+      background-color: lighten(#DC7725, 10%);
+    }
   }
   img {
     display: block;
@@ -81,7 +93,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
-  margin-top: 17.5%;
+  margin-top: 9%;
   padding-left: 10px;
   #header-title2 {
     a {
@@ -98,7 +110,7 @@ header {
       font-weight: 700;
       font-size: 15px;
       list-style-type: none;
-      color:white;
+      color:silver;
       font-family: 'Fjalla One', sans-serif;
       a {
         color:white;
