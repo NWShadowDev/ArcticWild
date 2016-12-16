@@ -103,6 +103,7 @@ header {
     font-weight: lighter;
     &:hover {
       background-color: lighten($arctic-orange, 10%);
+      transform: rotateX(180deg);
     }
   }
   img {
