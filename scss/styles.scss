@@ -2,8 +2,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
+
 header {
   height: 51px;
+  color:white;
+  a {
+    color:white;
+    text-decoration: none;
+  }
 }
 
 .flex-container {
@@ -19,8 +28,9 @@ header {
       padding: 10px;
       font-weight: 700;
       font-size: 15px;
+      list-style-type: none;
       a {
-        text-decoration: none;
+        color: white;
       }
     }
   }
