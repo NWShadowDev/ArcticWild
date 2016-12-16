@@ -26,6 +26,7 @@ header {
       font-size: 15px;
       list-style-type: none; }
       .flex-container ul li a {
-        color: white; }
+        color: white;
+        font-family: 'Fjalla One', sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
