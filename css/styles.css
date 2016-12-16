@@ -78,7 +78,8 @@ header {
   display: flex;
   align-items: center;
   margin-top: 9%;
-  padding-left: 10px; }
+  padding-left: 10px;
+  position: relative; }
   .flex-container2 #header-title2 a {
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -103,24 +104,27 @@ header {
   height: auto;
   flex-wrap: wrap; }
   #gallery .row {
-    padding: 5px;
     width: 25%; }
     #gallery .row .col {
       flex: 1 1;
       border: 2px solid white;
-      height: 200px; }
+      height: 200px;
+      margin: 10px; }
       #gallery .row .col:nth-child(1) {
-        background: red;
-        flex-basis: 200px; }
+        background-image: url("../img/arctic-rafting.jpg");
+        flex-basis: 500px; }
       #gallery .row .col:nth-child(2) {
-        background: yellow;
+        background-image: url("../img/wildlife.png");
+        background-position: center;
         flex-basis: 200px; }
       #gallery .row .col:nth-child(3) {
-        background: orange;
-        flex-basis: 200px; }
+        background-image: url("../img/wild1.jpeg");
+        background-position: center;
+        background-size: contain;
+        flex-basis: 300px; }
       #gallery .row .col:nth-child(4) {
         background: green;
-        flex-basis: 200px; }
+        flex-basis: 300px; }
       #gallery .row .col:nth-child(5) {
         background: purple;
         flex-basis: 200px; }
@@ -144,6 +148,6 @@ header {
         flex-basis: 200px; }
       #gallery .row .col:nth-child(12) {
         background: purple;
-        flex-basis: 200px; }
+        flex-basis: 500px; }
 
 /*# sourceMappingURL=styles.css.map */
