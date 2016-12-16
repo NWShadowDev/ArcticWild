@@ -252,17 +252,41 @@ header {
       position: relative;
       top: 20px;
     }
-    .flex-container2 {
-      ul {
-        li {
-          a {
-            color: red;
-          }
+  }
+}
 
+//658px and under
+@media screen and (max-width: 658px) {
+  .flex-container {
+    ul {
+      li {
+        a {
+          font-size: 10pt;
         }
       }
     }
+    #gallery {
+      .row {
+        .col {
+          width: 100%;
+          height: 50%;
+          position: relative;
+          top: 100px;
+          }
+        }
+      }
   }
+  #hero{
+    h1 {
+      font-size: 3em;
+    }
+    a {
+      i {
+        margin-top: 10px;
+      }
+    }
+  }
+
 }
 
 //1024px and higher
