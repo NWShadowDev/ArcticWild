@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: black; }
+  background-image: url("../img/hero-slide1.jpg"); }
 
 header {
   height: 51px;
@@ -28,5 +28,13 @@ header {
       .flex-container ul li a {
         color: white;
         font-family: 'Fjalla One', sans-serif; }
+
+#hero hr {
+  width: 200px;
+  height: 2px;
+  color: white; }
+#hero h1, #hero h3 {
+  color: white;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
