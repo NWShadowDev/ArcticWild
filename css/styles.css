@@ -114,6 +114,8 @@ header {
       border: 2px solid white;
       height: 200px;
       margin: 10px; }
+      #gallery .row .col:hover {
+        border: 3px solid #DC7725; }
       #gallery .row .col:nth-child(1) {
         background-image: url("../img/arctic-rafting.jpg");
         flex-basis: 500px; }
