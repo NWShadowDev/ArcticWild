@@ -2,7 +2,9 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url("../img/hero-slide1.jpg"); }
+  background-image: url("../img/hero-slide1.jpg");
+  background-repeat: no-repeat;
+  background-color: black; }
 
 header {
   height: 51px;
@@ -93,5 +95,55 @@ header {
       font-family: 'Fjalla One', sans-serif; }
       .flex-container2 ul li a {
         color: white; }
+
+#gallery {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap; }
+  #gallery .row {
+    padding: 5px;
+    width: 25%; }
+    #gallery .row .col {
+      flex: 1 1;
+      border: 2px solid white;
+      height: 200px; }
+      #gallery .row .col:nth-child(1) {
+        background: red;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(2) {
+        background: yellow;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(3) {
+        background: orange;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(4) {
+        background: green;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(5) {
+        background: purple;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(6) {
+        background: purple;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(7) {
+        background: green;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(8) {
+        background: purple;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(9) {
+        background: purple;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(10) {
+        background: green;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(11) {
+        background: purple;
+        flex-basis: 200px; }
+      #gallery .row .col:nth-child(12) {
+        background: purple;
+        flex-basis: 200px; }
 
 /*# sourceMappingURL=styles.css.map */

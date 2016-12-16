@@ -1,9 +1,12 @@
+//Base Styles
 * {
   box-sizing: border-box;
 }
 
 body {
   background-image: url('../img/hero-slide1.jpg');
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 header {
@@ -14,6 +17,8 @@ header {
     text-decoration: none;
   }
 }
+
+//Top
 
 .flex-container {
   width: 970px;
@@ -36,7 +41,7 @@ header {
     }
   }
 }
-
+//Middle - Hero
 #hero {
   align-items: center;
   margin-top: 10%;
@@ -86,7 +91,7 @@ header {
     margin: 0 auto;
   }
 }
-
+//2nd Nav
 .flex-container2 {
   background-color: #333333;
   width: 100%;
@@ -114,6 +119,73 @@ header {
       font-family: 'Fjalla One', sans-serif;
       a {
         color:white;
+      }
+    }
+  }
+}
+
+// Gallery
+
+#gallery {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  .row {
+    padding:5px;
+    width: 25%;
+    .col {
+      flex: 1 1;
+      border:2px solid white;
+      height: 200px;
+      &:nth-child(1) {
+        background: red;
+        flex-basis: 200px;
+      }
+      &:nth-child(2) {
+        background: yellow;
+        flex-basis: 200px;
+      }
+      &:nth-child(3) {
+        background: orange;
+        flex-basis: 200px;
+      }
+      &:nth-child(4) {
+        background: green;
+        flex-basis: 200px;
+      }
+      &:nth-child(5) {
+        background: purple;
+        flex-basis: 200px;
+      }
+      &:nth-child(6) {
+        background: purple;
+        flex-basis: 200px;
+      }
+      &:nth-child(7) {
+        background: green;
+        flex-basis: 200px;
+      }
+      &:nth-child(8) {
+        background: purple;
+        flex-basis: 200px;
+      }
+      &:nth-child(9) {
+        background: purple;
+        flex-basis: 200px;
+      }
+      &:nth-child(10) {
+        background: green;
+        flex-basis: 200px;
+      }
+      &:nth-child(11) {
+        background: purple;
+        flex-basis: 200px;
+      }
+      &:nth-child(12) {
+        background: purple;
+        flex-basis: 200px;
       }
     }
   }
