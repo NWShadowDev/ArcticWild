@@ -1,3 +1,14 @@
+.anchor, header a, .flex-container ul li a, #hero a, .flex-container2 #header-title2 a, .flex-container2 ul li a {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  font-family: 'Fjalla One', sans-serif; }
+
+.center, #hero a, #hero button, #hero img {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
 * {
   box-sizing: border-box; }
 
@@ -8,12 +19,9 @@ body {
 
 header {
   height: 51px;
-  color: white; }
-  header a {
-    color: white;
-    text-decoration: none; }
-    header a:hover {
-      color: #DC7725; }
+  color: #fff; }
+  header a:hover {
+    color: #DC7725; }
 
 .flex-container {
   width: 970px;
@@ -29,52 +37,38 @@ header {
       font-weight: 700;
       font-size: 15px;
       list-style-type: none; }
-      .flex-container ul li a {
-        color: white;
-        font-family: 'Fjalla One', sans-serif; }
-        .flex-container ul li a:hover {
-          color: #DC7725;
-          text-decoration: underline; }
+      .flex-container ul li a:hover {
+        color: #DC7725;
+        text-decoration: underline; }
 
 #hero {
   align-items: center;
   margin-top: 10%; }
-  #hero a {
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    display: block; }
-    #hero a:hover {
-      color: #DC7725; }
+  #hero a:hover {
+    color: #DC7725; }
   #hero hr {
     width: 200px;
     height: 5px;
-    background: white; }
+    background: #fff; }
   #hero h1 {
     font-size: 7em;
     margin: 0 auto; }
   #hero h3 {
     font-family: 'Fjalla One', sans-serif; }
   #hero h1, #hero h3 {
-    color: white;
+    color: #fff;
     text-align: center; }
   #hero button {
     width: 200px;
     height: 70px;
-    color: white;
+    color: #fff;
     background-color: #DC7725;
-    margin: 0 auto;
-    display: block;
     margin-top: 10%;
     font-family: 'Fjalla One', sans-serif;
     font-size: 14pt;
     font-weight: lighter; }
     #hero button:hover {
       background-color: #e39251; }
-  #hero img {
-    display: block;
-    text-align: center;
-    margin: 0 auto; }
 
 .flex-container2 {
   background-color: #333333;
@@ -86,10 +80,11 @@ header {
   padding-left: 10px;
   position: relative; }
   .flex-container2 #header-title2 a {
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
-    text-decoration: none; }
+    font-size: 12pt; }
+    .flex-container2 #header-title2 a:hover {
+      color: #DC7725;
+      text-decoration: underline;
+      transform: skewX(20deg); }
   .flex-container2 ul {
     display: flex; }
     .flex-container2 ul li {
@@ -99,8 +94,9 @@ header {
       list-style-type: none;
       color: silver;
       font-family: 'Fjalla One', sans-serif; }
-      .flex-container2 ul li a {
-        color: white; }
+      .flex-container2 ul li a:hover {
+        color: #DC7725;
+        text-decoration: underline; }
 
 #gallery {
   position: relative;
@@ -108,7 +104,7 @@ header {
   width: 100%;
   height: auto;
   flex-wrap: wrap;
-  color: white;
+  color: #fff;
   font-family: 'Fjalla One', sans-serif;
   text-align: center; }
   #gallery .row {
@@ -116,16 +112,12 @@ header {
     #gallery .row .col {
       padding: 5px;
       flex: 1 1;
-      border: 2px solid white;
+      border: 2px solid #fff;
       height: 200px;
       margin: 10px; }
       #gallery .row .col:hover {
         border: 3px solid #DC7725;
-        width: 300px;
-        height: 300px;
-        -webkit-transform: rotate(180deg);
-        /* Safari */
-        transform: rotate(180deg); }
+        transform: skewX(20deg); }
       #gallery .row .col:nth-child(1) {
         background-image: url("../img/arctic-rafting.jpg");
         flex-basis: 500px; }

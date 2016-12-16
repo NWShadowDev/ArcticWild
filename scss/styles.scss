@@ -1,5 +1,20 @@
 //Color Variables
 $arctic-orange : #DC7725;
+$white: #fff;
+
+//Extends
+.anchor {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 
 //Base Styles
 * {
@@ -14,10 +29,9 @@ body {
 
 header {
   height: 51px;
-  color:white;
+  color:$white;
   a {
-    color:white;
-    text-decoration: none;
+    @extend .anchor;
     &:hover {
       color:$arctic-orange;
     }
@@ -41,8 +55,7 @@ header {
       font-size: 15px;
       list-style-type: none;
       a {
-        color: white;
-        font-family: 'Fjalla One', sans-serif;
+        @extend .anchor;
         &:hover {
           color:$arctic-orange;
           text-decoration: underline;
@@ -56,10 +69,8 @@ header {
   align-items: center;
   margin-top: 10%;
   a {
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
+    @extend .anchor;
+    @extend .center;
     &:hover {
       color: $arctic-orange;
     }
@@ -67,7 +78,7 @@ header {
   hr {
     width: 200px;
     height: 5px;
-    background: white;
+    background: $white;
   }
   h1 {
     font-size: 7em;
@@ -77,16 +88,15 @@ header {
     font-family: 'Fjalla One', sans-serif;
   }
   h1,h3 {
-    color: white;
+    color: $white;
     text-align: center;
   }
   button {
     width: 200px;
     height: 70px;
-    color: white;
+    color: $white;
     background-color: $arctic-orange;
-    margin: 0 auto;
-    display: block;
+    @extend .center;
     margin-top:10%;
     font-family: 'Fjalla One', sans-serif;
     font-size: 14pt;
@@ -96,9 +106,7 @@ header {
     }
   }
   img {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+    @extend .center;
   }
 }
 //2nd Nav
@@ -113,10 +121,13 @@ header {
   position: relative;
   #header-title2 {
     a {
-      color:white;
-      font-family: 'Open Sans', sans-serif;
+      @extend .anchor;
       font-size: 12pt;
-      text-decoration: none;
+      &:hover {
+        color:$arctic-orange;
+        text-decoration: underline;
+        transform: skewX(20deg);
+      }
     }
   }
   ul {
@@ -129,7 +140,11 @@ header {
       color:silver;
       font-family: 'Fjalla One', sans-serif;
       a {
-        color:white;
+        @extend .anchor;
+        &:hover {
+          color:$arctic-orange;
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -143,7 +158,7 @@ header {
   width: 100%;
   height: auto;
   flex-wrap: wrap;
-  color: white;
+  color: $white;
   font-family: 'Fjalla One',
   sans-serif;
   text-align: center;
@@ -152,15 +167,12 @@ header {
     .col {
       padding: 5px;
       flex: 1 1;
-      border:2px solid white;
+      border:2px solid $white;
       height: 200px;
       margin: 10px;
       &:hover {
         border: 3px solid $arctic-orange;
-        width: 300px;
-        height: 300px;
-        -webkit-transform: rotate(180deg); /* Safari */
-        transform: rotate(180deg);
+        transform: skewX(20deg);
       }
       &:nth-child(1) {
         background-image: url('../img/arctic-rafting.jpg');
