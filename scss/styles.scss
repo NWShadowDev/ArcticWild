@@ -63,9 +63,46 @@ header {
     background-color: #DC7725;
     margin: 0 auto;
     display: block;
-    margin-top:20%;
+    margin-top:10%;
     font-family: 'Fjalla One', sans-serif;
     font-size: 14pt;
     font-weight: lighter;
+  }
+  img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.flex-container2 {
+  background-color: #333333;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-top: 97px;
+  padding-left: 10px;
+  #header-title2 {
+    a {
+      color:white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12pt;
+      text-decoration: none;
+    }
+  }
+  ul {
+    display: flex;
+    li {
+      padding: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      list-style-type: none;
+      color:white;
+      font-family: 'Fjalla One', sans-serif;
+      a {
+        color:white;
+      }
+    }
   }
 }
