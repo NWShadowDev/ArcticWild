@@ -4,7 +4,7 @@
   list-style-type: none;
   font-family: 'Fjalla One', sans-serif; }
 
-.center, #hero a, #hero button, #hero img, #gallery .row {
+.center, #hero a, #hero button, #hero img {
   display: block;
   margin: 0 auto;
   text-align: center; }
@@ -99,79 +99,36 @@ header {
         color: #DC7725;
         text-decoration: underline; }
 
-#gallery {
-  position: relative;
+.wrapper {
   display: flex;
-  width: 100%;
-  height: auto;
-  flex-wrap: wrap;
-  color: #fff;
-  font-family: 'Fjalla One', sans-serif;
-  text-align: center; }
-  #gallery .row {
-    width: 30%; }
-    #gallery .row .col {
-      padding: 5px;
-      margin-top: 10px;
-      flex: 1 1;
-      border: 2px solid #fff;
-      height: 200px;
-      transition: transform(5s);
-      background-repeat: no-repeat; }
-      #gallery .row .col img {
-        background-size: cover; }
-      #gallery .row .col:hover {
-        border: 3px solid #DC7725;
-        transform: rotateY(180deg);
-        opacity: 0.5; }
-      #gallery .row .col:nth-child(1) {
-        background-image: url("../img/arctic-rafting.jpg");
-        flex-basis: 300px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(2) {
-        background-image: url("../img/wildlife.png");
-        background-position: center;
-        flex-basis: 200px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(3) {
-        background-image: url("../img/wild1.jpeg");
-        background-position: center;
-        background-size: contain;
-        flex-basis: 300px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(4) {
-        background: green;
-        flex-basis: 300px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(5) {
-        background: purple;
-        flex-basis: 200px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(6) {
-        background: purple;
-        flex-basis: 200px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(7) {
-        background: green;
-        flex-basis: 200px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(8) {
-        background: purple;
-        flex-basis: 200px;
-        background-size: cover;
-        background-position: center; }
-      #gallery .row .col:nth-child(9) {
-        background: purple;
-        flex-basis: 200px;
-        background-size: cover;
-        background-position: center; }
+  flex-wrap: wrap; }
+
+.gallery-image {
+  margin: 10px;
+  flex: 1 1;
+  border: 2px solid black;
+  height: 200px; }
+  .gallery-image:nth-child(1) {
+    background-image: url("../img/arctic-rafting.jpg");
+    flex-basis: 500px; }
+  .gallery-image:nth-child(2) {
+    background-image: url("../img/wild1.jpeg");
+    flex-basis: 300px; }
+  .gallery-image:nth-child(3) {
+    background-image: url("../img/wildlife.png");
+    background-position: center;
+    flex-basis: 300px; }
+  .gallery-image:nth-child(4) {
+    background-image: url("../img/wildlife2.jpg");
+    background-position: center;
+    flex-basis: 300px; }
+  .gallery-image:nth-child(5) {
+    background-image: url("../img/wildlife3.jpg");
+    background-position: center;
+    flex-basis: 300px; }
+  .gallery-image:nth-child(6) {
+    background-image: url("../img/wildlife4.jpg");
+    flex-basis: 500px; }
 
 @media screen and (max-width: 658px) {
   .flex-container ul li a {
